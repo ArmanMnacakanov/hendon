@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Values_Of_Smart_Box {
+  width: 100%;
+  height: auto;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 992px) {
+  .Values_Of_Smart_Box {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .Values_Of_Smart_Box > div {
+    margin: 60px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Values_Of_Smart_Box > div {
+    margin: 30px;
+  }
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Values_Of_Smart_Box > div {
+    margin: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box > div {
+    margin: 10px;
+  }
+}
+.Values_Of_Smart_Box .Data_Box {
+  width: 650px;
+  height: auto;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  transition: 0.8s;
+  transition-delay: 0.2s;
+}
+.Values_Of_Smart_Box .Data_Box ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.Values_Of_Smart_Box .Data_Box ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 8px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.188);
+}
+.Values_Of_Smart_Box .Data_Box ul li h3 {
+  color: #c28562;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Data_Box ul li h3 {
+    font-size: 13px;
+  }
+}
+.Values_Of_Smart_Box .Data_Box ul li span {
+  color: rgba(0, 0, 0, 0.594);
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Data_Box ul li span {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}
+@media (min-width: 552px) and (max-width: 1200px) {
+  .Values_Of_Smart_Box .Data_Box {
+    width: 600px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Data_Box {
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0 35px 40px rgba(0, 0, 0, 0.377);
+  }
+}
+.Values_Of_Smart_Box .Info_Box {
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 25px;
+  transition: 0.8s;
+  transition-delay: 0.5s;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Values_Of_Smart_Box .Info_Box {
+    width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Values_Of_Smart_Box .Info_Box {
+    width: 80%;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Info_Box {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+.Values_Of_Smart_Box .Info_Box > div {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Info_Box > div {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.Values_Of_Smart_Box .Info_Box > div:nth-child(2) {
+  text-wrap: wrap;
+}
+.Values_Of_Smart_Box .Info_Box > div:nth-child(3) > p {
+  color: rgb(41, 40, 40);
+  letter-spacing: 0;
+  text-transform: capitalize;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.Values_Of_Smart_Box .Info_Box > div:last-child {
+  width: 100%;
+}
+.Values_Of_Smart_Box .Info_Box > div h1 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 44px;
+  font-weight: 100;
+  line-height: 1.22em;
+  letter-spacing: 0.15em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+@media (min-width: 1200px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    font-size: 44px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 40px;
+  }
+}
+.Values_Of_Smart_Box .Info_Box > div p {
+  width: 100%;
+  font-size: 13px;
+  letter-spacing: 0.6em;
+  font-family: Raleway;
+  font-weight: 500;
+  margin: 13px 0 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 2.2em;
+  color: #c28562;
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Values_Of_Smart_Box .Info_Box > div p {
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Info_Box > div p {
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}
+.Values_Of_Smart_Box .Info_Box > div div {
+  width: 100%;
+}
+.Values_Of_Smart_Box .Info_Box > div div ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Values_Of_Smart_Box .Info_Box > div div ul li {
+  width: 100%;
+  margin: 10px;
+  list-style: none;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 100;
+}
+.Values_Of_Smart_Box .Info_Box > div div ul li svg {
+  padding-right: 10px;
+  font-weight: 100;
+}/*# sourceMappingURL=style.css.map */

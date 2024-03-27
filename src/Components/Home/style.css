@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Banner_Box {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  animation: show 1s ease-in-out forwards;
+  animation-delay: 0.1s;
+}
+@media (min-width: 1024px) {
+  .Banner_Box {
+    height: 100vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024x) {
+  .Banner_Box {
+    height: 80vh;
+  }
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Banner_Box {
+    height: 80vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Banner_Box {
+    height: 55vh;
+    animation: show2 1s ease-in-out forwards;
+  }
+}
+@keyframes show2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Banner_Box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.Banner_Box img.visible {
+  opacity: 1;
+  animation: zoom 40s linear infinite;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.Banner_Box img.hidden {
+  opacity: 0;
+  animation: opacity 5s linear forwards;
+}
+@keyframes opacity {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.Banner_Box img:nth-child(4) {
+  position: absolute;
+  right: -100%;
+  z-index: 5;
+  width: 40%;
+  height: 100%;
+  opacity: 0;
+  filter: drop-shadow(20px 5px 90px rgba(0, 0, 0, 0.466));
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Banner_Box img:nth-child(4) {
+    width: 80%;
+  }
+}
+.Banner_Box img:nth-child(4).visible {
+  opacity: 1;
+  animation: slide 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+.Banner_Box img:nth-child(4).hidden {
+  opacity: 0;
+  animation: opacity2 2s linear forwards;
+}
+@keyframes opacity2 {
+  from {
+    transform: scale(1);
+    right: 0;
+  }
+  to {
+    transform: scale(1);
+    right: -100%;
+  }
+}
+.Banner_Box img:nth-child(5) {
+  position: absolute;
+  right: -100%;
+  z-index: 5;
+  width: 40%;
+  height: 100%;
+  opacity: 0;
+  filter: drop-shadow(20px 5px 90px rgba(0, 0, 0, 0.466));
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Banner_Box img:nth-child(5) {
+    width: 80%;
+  }
+}
+.Banner_Box img:nth-child(5).visible {
+  opacity: 1;
+  animation: slide 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+.Banner_Box img:nth-child(5).hidden {
+  opacity: 0;
+  animation: opacity2 2s linear forwards;
+}
+@keyframes opacity2 {
+  from {
+    transform: scale(1);
+    right: 0;
+  }
+  to {
+    transform: scale(1);
+    right: -100%;
+  }
+}
+.Banner_Box img:nth-child(6) {
+  position: absolute;
+  right: -100%;
+  z-index: 5;
+  width: 40%;
+  height: 100%;
+  opacity: 0;
+  filter: drop-shadow(20px 5px 90px rgba(0, 0, 0, 0.466));
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Banner_Box img:nth-child(6) {
+    width: 80%;
+  }
+}
+.Banner_Box img:nth-child(6).visible {
+  opacity: 1;
+  animation: slide 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+.Banner_Box img:nth-child(6).hidden {
+  opacity: 0;
+  animation: opacity2 2s linear forwards;
+}
+@keyframes opacity2 {
+  from {
+    transform: scale(1);
+    right: 0;
+  }
+  to {
+    transform: scale(1);
+    right: -100%;
+  }
+}
+@keyframes slide {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+.Banner_Box .Banner_Title_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  top: 30%;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Banner_Box .Banner_Title_Box {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    background-color: rgba(34, 34, 34, 0.6588235294);
+  }
+}
+.Banner_Box .Banner_Title_Box h1 {
+  width: 100%;
+  font-size: 140px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond";
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 25px;
+  text-shadow: -5px 5px 0 #222222;
+}
+@media (min-width: 1200px) {
+  .Banner_Box .Banner_Title_Box h1 {
+    font-size: 140px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Banner_Box .Banner_Title_Box h1 {
+    font-size: 85px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Banner_Box .Banner_Title_Box h1 {
+    font-size: 68px;
+  }
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Banner_Box .Banner_Title_Box h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Banner_Box .Banner_Title_Box h1 {
+    font-size: 18px;
+    letter-spacing: 20px;
+  }
+}
+.Banner_Box .Banner_Title_Box p {
+  color: rgb(215, 146, 107);
+  font-family: Raleway;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 31px;
+  letter-spacing: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  width: 640px;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Banner_Box .Banner_Title_Box p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    width: 280px;
+    transform: translateY(10px);
+  }
+}
+.Banner_Box .To_Down {
+  position: absolute;
+  top: 80%;
+  left: 48%;
+  padding: 15px 20px;
+  color: #d7926b;
+  border-radius: 50%;
+  border: 3px solid rgba(215, 147, 107, 0.4745098039);
+  transition: 0.4s;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Banner_Box .To_Down {
+    left: 43%;
+    z-index: 11;
+  }
+}
+.Banner_Box .To_Down:hover {
+  border: 3px solid #d7926b;
+}/*# sourceMappingURL=style.css.map */

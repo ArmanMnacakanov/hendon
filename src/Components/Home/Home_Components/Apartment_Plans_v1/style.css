@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Apartment_Plans_Box_v1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+  overflow: hidden;
+  scale: 0;
+  opacity: 0;
+  animation: fadein linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 800px;
+}
+@keyframes fadein {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+.Apartment_Plans_Box_v1 > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Apartment_Plans_Box_v1 > div:first-child {
+  flex-direction: column;
+}
+.Apartment_Plans_Box_v1 .Title_Box {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Apartment_Plans_Box_v1 .Title_Box > div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.Apartment_Plans_Box_v1 .Title_Box > div h1 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.09em;
+  letter-spacing: 0.15em;
+  font-family: Raleway;
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Apartment_Plans_Box_v1 .Title_Box > div h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Apartment_Plans_Box_v1 .Title_Box > div h1 {
+    font-size: 18px;
+  }
+}
+.Apartment_Plans_Box_v1 .Title_Box > div p {
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 2.2em;
+  color: #c28562;
+  letter-spacing: 5px;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Apartment_Plans_Box_v1 .Title_Box > div p {
+    padding: 20px;
+  }
+}
+.Apartment_Plans_Box_v1 .Container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Apartment_Plans_Box_v1 .Container {
+    padding: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .Apartment_Plans_Box_v1 .Container {
+    flex-wrap: wrap;
+  }
+}
+.Apartment_Plans_Box_v1 .Container > div {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 10px;
+  transition: 0.4s;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Apartment_Plans_Box_v1 .Container > div {
+    width: 100%;
+  }
+}
+.Apartment_Plans_Box_v1 .Container > div button {
+  padding: 10px 20px 10px 5px;
+  margin: 10px;
+  transition: 0.4s;
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+.Apartment_Plans_Box_v1 .Container > div button::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transition: 0.4s;
+  background-color: black;
+}
+.Apartment_Plans_Box_v1 .Container > div button:hover::before {
+  width: 100%;
+}
+.Apartment_Plans_Box_v1 .Container > div button:focus::before {
+  width: 100%;
+}
+.Apartment_Plans_Box_v1 .Container > div:first-child {
+  width: 300px;
+  background-size: cover;
+  background-image: url(https://hendon.qodeinteractive.com/wp-content/themes/hendon/assets/img/pattern.png);
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Apartment_Plans_Box_v1 .Container > div:first-child {
+    width: 100%;
+  }
+}
+.Apartment_Plans_Box_v1 .Container > div:nth-child(2) {
+  width: 650px;
+  height: 450px;
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Apartment_Plans_Box_v1 .Container > div:nth-child(2) {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Apartment_Plans_Box_v1 .Container > div:nth-child(2) {
+    width: 100%;
+    height: 200px;
+  }
+}
+.Apartment_Plans_Box_v1 .Container > div:last-child {
+  width: 300px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Apartment_Plans_Box_v1 .Container > div:last-child {
+    width: 100%;
+    height: auto;
+  }
+}
+.Apartment_Plans_Box_v1 .Container > div > div {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Apartment_Plans_Box_v1 .Container > div > div p {
+  letter-spacing: 3px;
+  color: rgb(66, 66, 66);
+}
+.Apartment_Plans_Box_v1 .Container > div > div a {
+  background-color: #ffffff;
+  padding: 10px 60px;
+  border: double 8px #ffac7b;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.Apartment_Plans_Box_v1 .Container > div > div a:hover {
+  background-color: #c28562;
+  color: white;
+}
+.Apartment_Plans_Box_v1 .Container > div > div a::before {
+  display: none;
+}
+.Apartment_Plans_Box_v1 .Container > div > div div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.Apartment_Plans_Box_v1 .Container > div > div div h3 {
+  text-transform: uppercase;
+  color: #c28562;
+  width: auto;
+  letter-spacing: 5px;
+  font-family: Raleway;
+}
+.Apartment_Plans_Box_v1 .Container > div > div div span {
+  text-transform: uppercase;
+  color: #c28562;
+  letter-spacing: 5px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Complex_Schedule_Visit_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C28562;
+    padding: 40px;
+
+    &>div:first-child {
+        width: 800px;
+    }
+
+    h1 {
+        font-family: "Cormorant Garamond";
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 1.09em;
+        letter-spacing: .15em;
+        margin: 25px 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    p {
+        font-size: 13px;
+        letter-spacing: .6em;
+        font-family: Raleway;
+        font-weight: 500;
+        color: white;
+        margin: 0;
+        line-height: 2.23em;
+        text-transform: uppercase;
+    }
+
+    a {
+        padding: 10px 60px;
+        background-color: antiquewhite;
+        text-decoration: none;
+        font-size: 20px;
+        color: #C28562;
+        transition: 0.4s;
+        border:  1px solid rgb(255, 255, 255);
+
+        &:hover {
+            background-color: #C28562;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

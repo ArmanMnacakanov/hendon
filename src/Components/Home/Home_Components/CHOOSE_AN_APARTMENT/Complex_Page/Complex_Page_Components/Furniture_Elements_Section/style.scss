@@ -1,0 +1,131 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.Furniture_Elements_Section{
+    width: 100%;
+    height: auto;
+    padding: 180px  20px;
+    // background-color: #0B0606;
+    background-image: url(../../../../../../../Assets/Welcome_Section_Img/home-1-background-patern-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    transition: 0.4s;
+    transition-delay: .300s;
+
+    @media (min-width:320px) and (max-width:552px){
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 20px;
+    }
+    
+
+    &>div{
+        margin: 0 80px;
+
+        @media (min-width:320px) and (max-width:552px){
+            margin: 10px;
+        }
+        
+    }
+
+    .Text_Content {
+        width: 400px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        transition: 0.4s;
+        transition-delay: .600s;
+
+        @media (min-width:320px) and (max-width:552px){
+            padding: 0 25px;
+            opacity: 1;
+        }
+
+        h1 {
+            color: rgb(53, 53, 53);
+            font-family: "Cormorant Garamond";
+            text-transform: uppercase;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 1.22em;
+            letter-spacing: .15em;
+            transition: 0.4s;
+            transition-delay: .800s;
+
+            @media (min-width:320px) and (max-width:552px){
+               font-size: 30px;
+               text-align: center;
+               letter-spacing:10px;
+            }
+        }
+
+        p {
+            color: rgb(215, 146, 107);
+            font-size: 13px;
+            letter-spacing: .6em;
+            font-family: Raleway;
+            font-weight: 500;
+            margin: 13px 0 0;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 2.2em;
+
+            @media (min-width:320px) and (max-width:552px){
+                text-align: center;
+            }
+        }
+    }
+
+    .Img {
+        width: 500px;
+        height: 600px;
+        background-image: url(../../../../../../../Assets/Welcome_Section_Img/apart-img-1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        transition: 0.4s;
+        transition-delay: .500s;
+
+        @media (min-width:320px) and (max-width:552px){
+            width: 100%;
+            height: 300px;
+        }
+
+        &::before{
+            content: '';
+            width: 95%;
+            height: 90%;
+            background-image: url(../../../../../../../Assets/Welcome_Section_Img/apart-img-2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            border-left: 10px solid rgb(215, 146, 107);
+
+            @media (min-width:320px) and (max-width:552px){
+                width: 60%;
+                height: 50%;
+                left: 20%;
+                top: 80%;
+            }
+        }
+    }
+}

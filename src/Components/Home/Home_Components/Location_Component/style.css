@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Location_Container {
+  width: 100%;
+  height: auto;
+  padding: 0 0 150px 0;
+  overflow: hidden;
+}
+.Location_Container .Location_Box {
+  width: 100%;
+  height: 70vh;
+  background-image: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/04/slider-background-img-1.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .Location_Container .Location_Box {
+    height: 70vh;
+    background-size: cover;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Location_Container .Location_Box {
+    height: 40vh;
+    background-size: cover;
+  }
+}
+.Location_Container .Location_Box .Road_Info {
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+}
+.Location_Container .Location_Box .Road_Info h3 {
+  color: rgb(194, 133, 98);
+  text-transform: uppercase;
+  font-family: Raleway;
+}
+.Location_Container .Location_Box .Road_Info span {
+  color: rgb(97, 94, 94);
+  text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:first-child {
+    display: none;
+  }
+  .Location_Container .Location_Box .Road_Info:last-child {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Location_Container .Location_Box .Road_Info:first-child {
+    display: none;
+  }
+  .Location_Container .Location_Box .Road_Info:nth-child(2) {
+    display: none;
+  }
+  .Location_Container .Location_Box .Road_Info:nth-child(4) {
+    display: none;
+  }
+  .Location_Container .Location_Box .Road_Info:last-child {
+    display: none;
+  }
+}
+.Location_Container .Location_Box .Road_Info::after {
+  background-image: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/04/location-marker.png);
+  background-size: cover;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  animation: scale 2s ease-in-out infinite;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.Location_Container .Location_Box .Road_Info::before {
+  content: "";
+  position: absolute;
+  top: -320%;
+  height: 320%;
+  width: 1px;
+  background-color: rgb(145, 145, 145);
+}
+.Location_Container .Location_Box .Road_Info:first-child {
+  top: 105%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:first-child {
+    left: 14%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:first-child {
+    left: 7%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:first-child::before {
+  height: 360%;
+  top: -360%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:first-child::before {
+    height: 140%;
+    top: -140%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:first-child::before {
+    height: 110%;
+    top: -110%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:first-child::after {
+  top: -380%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:first-child::after {
+    top: -170%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:first-child::after {
+    top: -110%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(2) {
+  left: 30%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2) {
+    left: 25%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2) {
+    left: 22%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2) {
+    left: 12%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(2)::before {
+  height: 420%;
+  top: -420%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2)::before {
+    height: 300%;
+    top: -300%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2)::before {
+    height: 280%;
+    top: -280%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2)::before {
+    height: 300%;
+    top: -300%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(2)::after {
+  top: -440%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2)::after {
+    top: -320%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2)::after {
+    top: -290%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(2)::after {
+    top: -310%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(3) {
+  left: 47%;
+  top: 105%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3) {
+    transform: translate(-50%, -10%);
+    left: 50%;
+    top: 110%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3) {
+    transform: translate(-50%, -10%);
+    left: 50%;
+    top: 110%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3) {
+    transform: translate(-50%, -10%);
+    left: 50%;
+    top: 110%;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3) {
+    transform: translate(-50%, -10%);
+    left: 50%;
+    top: 110%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(3)::before {
+  height: 440%;
+  top: -440%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3)::before {
+    height: 220%;
+    top: -220%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3)::before {
+    height: 220%;
+    top: -220%;
+  }
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3)::before {
+    height: 240%;
+    top: -240%;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3)::before {
+    height: 150%;
+    top: -150%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(3)::after {
+  top: -460%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3)::after {
+    top: -250%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3)::after {
+    top: -250%;
+  }
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3)::after {
+    top: -270%;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(3)::after {
+    top: -160%;
+  }
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4) {
+    right: 21%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4) {
+    right: 17%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4) {
+    right: 5%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(4)::before {
+  height: 340%;
+  top: -340%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4)::before {
+    height: 230%;
+    top: -230%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4)::before {
+    height: 230%;
+    top: -230%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4)::before {
+    height: 230%;
+    top: -230%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(4)::after {
+  top: -360%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4)::after {
+    top: -250%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4)::after {
+    top: -250%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(4)::after {
+    top: -250%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(5) {
+  right: 9.5%;
+  top: 105%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(5) {
+    right: 6%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(5) {
+    right: 0%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(5)::before {
+  height: 460%;
+  top: -460%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(5)::before {
+    height: 320%;
+    top: -320%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(5)::before {
+    height: 320%;
+    top: -320%;
+  }
+}
+.Location_Container .Location_Box .Road_Info:nth-child(5)::after {
+  top: -480%;
+}
+@media (min-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(5)::after {
+    top: -340%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Location_Container .Location_Box .Road_Info:nth-child(5)::after {
+    top: -330%;
+  }
+}
+.Location_Container .Location_Box .Road_Info div {
+  margin: 5px;
+}/*# sourceMappingURL=style.css.map */

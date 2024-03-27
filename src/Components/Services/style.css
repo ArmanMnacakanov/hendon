@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Service_Banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/05/services-title-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: showBanner2 1s ease-in-out forwards;
+  overflow: hidden;
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Service_Banner {
+    height: 100vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Service_Banner {
+    height: 50vh;
+    padding: 200px 0;
+  }
+}
+@keyframes showBanner2 {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Service_Banner div {
+  margin: 15px;
+}
+.Service_Banner div h1 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 0.15em;
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Service_Banner div h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Service_Banner div h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+.Service_Banner div p {
+  font-family: Raleway;
+  font-size: 13px;
+  line-height: 2.23em;
+  letter-spacing: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #d7926b;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Service_Banner div p {
+    letter-spacing: 0.4em;
+  }
+}/*# sourceMappingURL=style.css.map */

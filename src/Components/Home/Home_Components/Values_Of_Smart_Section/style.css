@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Values_Of_Smart_Box {
+  width: 100%;
+  height: auto;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Values_Of_Smart_Box {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .Values_Of_Smart_Box > div {
+    margin: 60px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Values_Of_Smart_Box > div {
+    margin: 30px;
+  }
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Values_Of_Smart_Box > div {
+    margin: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box > div {
+    margin: 10px;
+  }
+}
+.Values_Of_Smart_Box .Img {
+  width: 900px;
+  height: 700px;
+  border-radius: 20px;
+  background-image: url(../../../../Assets/VALUES_OF_SMART_Img/home-1-video-buton-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 35px 35px 40px rgba(0, 0, 0, 0.24);
+  transition: 0.8s;
+  transition-delay: 0.2s;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Values_Of_Smart_Box .Img {
+    width: 600px;
+    height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Values_Of_Smart_Box .Img {
+    height: 350px;
+  }
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Values_Of_Smart_Box .Img {
+    width: 600px;
+    height: 300px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Img {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 35px 40px rgba(0, 0, 0, 0.377);
+  }
+}
+.Values_Of_Smart_Box .Info_Box {
+  width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.8s;
+  transition-delay: 0.5s;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Values_Of_Smart_Box .Info_Box {
+    width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Values_Of_Smart_Box .Info_Box {
+    width: 400px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Info_Box {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+.Values_Of_Smart_Box .Info_Box > div {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Info_Box > div {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.Values_Of_Smart_Box .Info_Box > div:nth-child(2) {
+  text-wrap: wrap;
+}
+.Values_Of_Smart_Box .Info_Box > div:last-child {
+  width: 100%;
+}
+.Values_Of_Smart_Box .Info_Box > div h1 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 44px;
+  font-weight: 100;
+  line-height: 1.22em;
+  letter-spacing: 0.15em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+@media (min-width: 1200px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    font-size: 44px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Info_Box > div h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 40px;
+  }
+}
+.Values_Of_Smart_Box .Info_Box > div p {
+  width: 100%;
+  font-size: 13px;
+  letter-spacing: 0.6em;
+  font-family: Raleway;
+  font-weight: 500;
+  margin: 13px 0 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 2.2em;
+  color: #c28562;
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Values_Of_Smart_Box .Info_Box > div p {
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Values_Of_Smart_Box .Info_Box > div p {
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}
+.Values_Of_Smart_Box .Info_Box > div div {
+  width: 100%;
+}
+.Values_Of_Smart_Box .Info_Box > div div ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Values_Of_Smart_Box .Info_Box > div div ul li {
+  width: 100%;
+  margin: 10px;
+  list-style: none;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 100;
+}
+.Values_Of_Smart_Box .Info_Box > div div ul li svg {
+  padding-right: 10px;
+  font-weight: 100;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Options_Section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 150px;
+  transition: 0.4s;
+  transition-delay: 0.1s;
+  background-color: whitesmoke;
+  background-image: none;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Options_Section {
+    padding: 100px 40px;
+  }
+}
+.Options_Section .Option {
+  width: 380px;
+  padding: 20px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Options_Section .Option {
+    border-bottom: 1px solid #C28562;
+  }
+}
+.Options_Section .Option div h3 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  color: #C28562;
+  font-size: 22px;
+  line-height: 1.45em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Options_Section .Option div h3 {
+    font-size: 18px;
+  }
+}
+.Options_Section .Option div p {
+  line-height: 1.45em;
+  font-weight: 500;
+  text-align: center;
+  color: gray;
+}
+.Options_Section .Option .Option_Img {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C28562;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Options_Section .Option .Option_Img:first-child {
+  background-image: url("https://hendon.qodeinteractive.com/wp-content/uploads/2020/06/icon-img-1.png");
+}
+.Options_Section .Option .Option_Img:nth-child(2) {
+  background-image: url("https://hendon.qodeinteractive.com/wp-content/uploads/2020/06/icon-img-2.png");
+}
+.Options_Section .Option .Option_Img:nth-child(3) {
+  background-image: url("https://hendon.qodeinteractive.com/wp-content/uploads/2020/06/icon-img-7.png");
+}
+.Options_Section .Option .Option_Img:nth-child(4) {
+  background-image: url("https://hendon.qodeinteractive.com/wp-content/uploads/2020/06/icon-img-4.png");
+}
+.Options_Section .Option .Option_Img:nth-child(5) {
+  background-image: url("https://hendon.qodeinteractive.com/wp-content/uploads/2020/06/icon-img-8.png");
+}
+.Options_Section .Option .Option_Img:last-child {
+  background-image: url("https://hendon.qodeinteractive.com/wp-content/uploads/2020/06/icon-img-6.png");
+}
+.Options_Section .Option .Option_Img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.Info_Section {
+    width: 100%;
+    height: auto;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/04/home-1-background-patern-1.jpg);
+    background-repeat: repeat;
+    flex-wrap: wrap;
+    transition: 0.4s;
+    transition-delay: .300s;
+    overflow: hidden;
+
+    div {
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        @media (min-width:552px) and (max-width:768px) {
+            width: 200px;
+            // background-color: red;
+            margin: 10px;
+        }
+
+        @media (min-width:320px) and (max-width:552px) {
+            width: 150px;
+            margin: 10px;
+        }
+
+        span {
+            display: block;
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 150px;
+            line-height: 1em;
+            color: #f7e3d8;
+
+            @media (min-width:552px) and (max-width:768px) {
+                font-size: 80px;
+            }
+
+            @media (min-width:320px) and (max-width:552px) {
+                font-size: 60px;
+            }
+        }
+
+        h3 {
+            position: absolute;
+            font-family: Raleway;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            color: #000;
+
+            @media (min-width:320px) and (max-width:552px) {
+                top: 40%;
+            }
+        }
+    }
+}

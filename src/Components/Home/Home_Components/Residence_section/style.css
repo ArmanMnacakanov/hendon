@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Residence_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 130px 40px;
+  background: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/04/counter-background.jpg);
+  overflow: hidden;
+  scale: 0;
+  opacity: 0;
+  animation: fadein linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+}
+@keyframes fadein {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Residence_Box {
+    padding: 100px 10px;
+  }
+}
+.Residence_Box a {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  text-decoration: none;
+  transition: 0.4s;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .Residence_Box a {
+    width: 250px;
+  }
+}
+@media (min-width: 552px) and (max-width: 768px) {
+  .Residence_Box a {
+    width: 300px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Residence_Box a {
+    width: 100%;
+  }
+}
+.Residence_Box a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.096);
+}
+.Residence_Box a div {
+  margin: 10px;
+}
+.Residence_Box a div h2 {
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: Raleway;
+}/*# sourceMappingURL=style.css.map */

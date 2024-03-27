@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Options_Section_v2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 150px;
+    transition: 0.4s;
+    transition-delay: .100s;
+    background-image: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/05/home-1-background-patern-2.jpg);
+    background-color: #0B0606;
+    overflow: hidden;
+
+    @media (min-width:320px) and (max-width:1200px){
+        padding: 100px 10px;
+    }
+
+
+    .Option {
+        padding: 20px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px;
+        border-bottom: 1px solid #C28562;
+
+        @media(min-width:1200px){
+            width: 380px;
+        }
+
+        @media (min-width:1024px) and (max-width:1200px){
+            width: 300px;
+        }
+
+        @media(min-width:768px) and (max-width:1024px){
+            width: 330px;
+        }
+
+
+
+        @media(min-width:520px) and (max-width:768px){
+            width: 250px;
+        }
+
+
+        @media(min-width:320px) and (max-width:552px){
+            width: 100%;
+        }
+
+        div {
+            width: 100%;
+
+            h3 {
+                font-family: Raleway;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-size: 22px;
+                line-height: 1.45em;
+                font-weight: 400;
+                letter-spacing: .1em;
+                margin: 25px 0;
+                -ms-word-wrap: break-word;
+                word-wrap: break-word;
+                text-align: center;
+
+                @media (min-width:320px) and (max-width:1200px){
+                    font-size: 16px;
+                }
+                
+            }
+
+            p {
+                line-height: 1.45em;
+                font-weight: 200;
+                letter-spacing: 3px;
+                text-align: center;
+                color: rgba(230, 230, 230, 0.794);
+            }
+        }
+
+        .Option_Img {
+            width: 25%;
+            height: 25%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffffff;
+
+            @media (min-width:552px) and (max-width:1024px) {
+                width: 40%;
+                height: 40%;
+            }
+            @media (min-width:320px) and (max-width:552px) {
+                width: 50%;
+                height: 50%;
+            }
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

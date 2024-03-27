@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Location_Container {
+    width: 100%;
+    height: auto;
+    padding: 0 0 150px 0;
+    overflow: hidden;
+    // background-color: red;
+
+
+    .Location_Box {
+        width: 100%;
+        height: 70vh;
+        // background-color: red;
+        background-image: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/04/slider-background-img-1.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        @media(min-width:768px) and (max-width:1200px) {
+            height: 70vh;
+            background-size: cover;
+        }
+
+        @media(min-width:320px) and (max-width:552px) {
+            height: 40vh;
+            // background-color: red;
+            background-size: cover;
+        }
+
+
+        .Road_Info {
+            position: absolute;
+            top: 100%;
+            width: 200px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            flex-direction: column;
+
+            h3 {
+                color: rgb(194, 133, 98);
+                text-transform: uppercase;
+                font-family: Raleway;
+            }
+
+            span {
+                color: rgb(97, 94, 94);
+                text-transform: uppercase;
+            }
+
+
+            @media(min-width:768px) and (max-width:1024px) {
+
+                &:first-child {
+                    display: none;
+                }
+
+                &:last-child {
+                    display: none;
+                }
+            }
+
+            @media(min-width:320px) and (max-width:768px) {
+
+                &:first-child {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(4) {
+                    display: none;
+                }
+
+                &:last-child {
+                    display: none;
+                }
+            }
+
+
+            &::after {
+                background-image: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/04/location-marker.png);
+                background-size: cover;
+                background-position: center;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                position: absolute;
+                content: '';
+
+                animation: scale 2s ease-in-out infinite;
+
+                @keyframes scale {
+                    0% {
+                        transform: scale(1);
+                    }
+
+                    50% {
+                        transform: scale(1.3);
+                    }
+
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -320%;
+                height: 320%;
+                width: 1px;
+                background-color: rgb(145, 145, 145);
+            }
+
+            &:first-child {
+                top: 105%;
+
+                @media(min-width:1200px){
+                    left: 14%;
+                }
+
+                @media(min-width:1024px) and (max-width:1200px) {
+                    left: 7%;
+                }
+
+                &::before {
+                    height: 360%;
+                    top: -360%;
+
+                    @media(min-width:1200px){
+                        height: 140%;
+                        top: -140%;
+                    }
+
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        height: 110%;
+                        top: -110%;
+                    }
+                }
+
+
+                &::after {
+                    top: -380%;
+                    @media(min-width:1200px){
+                        top: -170%;
+                    }
+
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        top: -110%;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                left: 30%;
+
+                @media(min-width:1200px){
+                    left: 25%;
+                }
+
+                @media(min-width:1024px) and (max-width:1200px) {
+                    left: 22%;
+                }
+
+                @media(min-width:768px) and (max-width:1024px) {
+                    left: 12%;
+                }
+
+                &::before {
+                    height: 420%;
+                    top: -420%;
+
+                    @media(min-width:1200px){
+                        height: 300%;
+                        top: -300%;
+                    }
+
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        height: 280%;
+                        top: -280%;
+                    }
+
+                    @media(min-width:768px) and (max-width:1024px) {
+                        height: 300%;
+                        top: -300%;
+                    }
+                }
+
+                &::after {
+                    top: -440%;
+                    @media(min-width:1200px){
+                        top: -320%;
+                    }
+
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        top: -290%;
+                    }
+
+                    @media(min-width:768px) and (max-width:1024px) {
+                        top: -310%;
+                    }
+
+                }
+            }
+
+            &:nth-child(3) {
+                left: 47%;
+                top: 105%;
+
+                @media(min-width:1200px){
+                    transform: translate(-50%, -10%);
+                    left: 50%;
+                    top: 110%;
+                }
+                
+
+                @media(min-width:1024px) and (max-width:1200px) {
+                    transform: translate(-50%, -10%);
+                    left: 50%;
+                    top: 110%;
+                }
+
+                @media(min-width:768px) and (max-width:1024px) {
+                    transform: translate(-50%, -10%);
+                    left: 50%;
+                    top: 110%;
+                }
+
+                @media(min-width:320px) and (max-width:768px) {
+
+                    // background-color: red;
+                    transform: translate(-50%, -10%);
+                    left: 50%;
+                    top: 110%;
+                }
+
+                &::before {
+                    height: 440%;
+                    top: -440%;
+
+                    @media(min-width:1200px){
+                        height: 220%;
+                        top: -220%;
+                    }
+
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        height: 220%;
+                        top: -220%;
+                    }
+
+
+                    @media(min-width:552px) and (max-width:1024px) {
+                        height: 240%;
+                        top: -240%;
+                    }
+
+                    @media(min-width:320px) and (max-width:552px) {
+                        height: 150%;
+                        top: -150%;
+                    }
+                }
+
+                &::after {
+                    top: -460%;
+
+                    @media(min-width:1200px){
+                        top: -250%;
+                    }
+
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        top: -250%;
+                    }
+
+                    @media(min-width:552px) and (max-width:1024px) {
+                        top: -270%;
+                    }
+
+                    @media(min-width:320px) and (max-width:552px) {
+                        top: -160%;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                @media(min-width:1200px){
+                    right: 21%;
+                }
+
+                @media(min-width:1024px) and (max-width:1200px) {
+                    right: 17%;
+                }
+
+                @media(min-width:768px) and (max-width:1024px) {
+                    right: 5%;
+                }
+
+                &::before {
+                    height: 340%;
+                    top: -340%;
+
+                    @media(min-width:1200px){
+                        height: 230%;
+                        top: -230%;
+                    }
+
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        height: 230%;
+                        top: -230%;
+                    }
+
+                    @media(min-width:768px) and (max-width:1024px) {
+                        height: 230%;
+                        top: -230%;
+                    }
+
+                }
+
+                &::after {
+                    top: -360%;
+
+                    @media(min-width:1200px){
+                        top: -250%;
+                    }
+
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        top: -250%;
+                    }
+
+                    @media(min-width:768px) and (max-width:1024px) {
+                        top: -250%;
+                    }
+
+                }
+            }
+
+            &:nth-child(5) {
+                right: 9.5%;
+                top: 105%;
+                @media(min-width:1200px) {
+                    right: 6%;
+                }
+
+                @media(min-width:1024px) and (max-width:1200px) {
+                    right: 0%;
+                }
+
+                &::before {
+                    @media(min-width:1200px){
+                        height: 320%;
+                        top: -320%;
+                    }
+                    @media(min-width:1024px) and (max-width:1200px) {
+                        height: 320%;
+                        top: -320%;
+                    }
+
+                    height: 460%;
+                    top: -460%;
+                }
+
+                &::after {
+                    @media(min-width:1200px){
+                        top: -340%;
+                    }
+                    @media(min-width:1024px) and (max-width:1200px){
+                        top: -330%;
+                    }
+                    top: -480%;
+                }
+            }
+
+            div {
+                margin: 5px;
+            }
+        }
+    }
+}

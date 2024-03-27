@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Stilish_News_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 30px;
+    background-color: #1c0a09;
+    overflow: hidden;
+
+    @media(min-width:320px) and (max-width:768px){
+        padding: 100px 10px;
+    }
+
+
+   &>div {
+        margin: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &:first-child {
+            width: 370px;
+            height: auto;
+            flex-direction: column;
+
+            @media(min-width:320px) and (max-width:1024px){
+                width: 100%;
+                // background-color: #c28562;
+            }
+
+            h1 {
+                color: #ffffff;
+                font-size: 44px;
+                font-weight: 300;
+                line-height: 1.22em;
+                letter-spacing: .15em;
+                font-family: Raleway;
+
+                @media(min-width:320px) and (max-width:1024px){
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+
+            p {
+                font-size: 13px;
+                letter-spacing: .6em;
+                font-family: Raleway;
+                font-weight: 500;
+                margin: 13px 0 0;
+                text-transform: uppercase;
+                font-weight: 500;
+                line-height: 2.2em;
+                color: #c28562;
+            }
+        }
+
+        a{
+            width: 400px;
+            height: auto;
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-decoration: none;
+            border-bottom:  1px solid #d7926b;
+            padding: 40px 0;
+            transition: .4s;
+
+            @media(min-width:552px) and (max-width:768px){
+                width: 300px;
+            }
+            @media(min-width:320px) and (max-width:552px){
+                width: 100%;
+            }
+
+            &:hover{
+                transform: translateX(5px);
+            }
+
+            &:hover h3{
+                color: #c28562;
+            }
+
+            &>div{
+                width: 100%;
+                height: auto;
+                margin-top: 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                h3{
+                    color: white;
+                    letter-spacing: 5px;
+                    font-weight: 100;
+                    transition: .4s;
+                    font-family: Raleway;
+                }
+
+                span{
+                    color: #d7926b;
+                    letter-spacing: 2px;
+                    transform: translateY(-10px);
+                }
+                p{
+                    color: rgb(172, 172, 172);
+                    letter-spacing: 3px;
+                    font-family: Raleway;
+                }
+            }
+
+        }
+
+
+    }
+}

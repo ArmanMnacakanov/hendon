@@ -1,0 +1,89 @@
+.swiper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.swiper .swiper-slide {
+  width: 100%;
+  background: #ffffff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 150px 450px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .swiper .swiper-slide {
+    padding: 150px 40px;
+  }
+}
+.swiper .swiper-slide > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.swiper .swiper-slide > div > div {
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.swiper .swiper-slide > div > div h1 {
+  text-transform: uppercase;
+  font-family: Raleway;
+  color: #000;
+  font-size: 60px;
+  line-height: 1.45em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .swiper .swiper-slide > div > div h1 {
+    font-size: 30px;
+  }
+}
+.swiper .swiper-slide > div > div p {
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.4941176471);
+  text-align: center;
+  line-height: 35px;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .swiper .swiper-slide > div > div p {
+    font-size: 15px;
+  }
+}
+.swiper .swiper-slide > div > div div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.swiper .swiper-slide > div > div div h3 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 22px;
+  line-height: 1.45em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-family: Raleway;
+}
+.swiper .swiper-slide > div > div div span {
+  font-size: 20px;
+  letter-spacing: 0.6em;
+  font-family: Raleway;
+  font-weight: 500;
+  color: #c28562;
+  font-weight: 500;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Team_Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1C0A09;
+  padding: 100px 0;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Team_Container {
+    padding: 50px 0;
+  }
+}
+.Team_Container > div {
+  margin-top: 15px;
+}
+.Team_Container .Team_Container_Title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Team_Container .Team_Container_Title > div {
+  margin-top: 15px;
+}
+.Team_Container .Team_Container_Title > div h1 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.09em;
+  letter-spacing: 0.15em;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Team_Container .Team_Container_Title > div h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Team_Container .Team_Container_Title > div h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+.Team_Container .Team_Container_Title > div p {
+  font-size: 13px;
+  letter-spacing: 0.6em;
+  font-family: Raleway;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 2.2em;
+  color: #c28562;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Team_Container .Team_Container_Title > div p {
+    letter-spacing: 0.4em;
+    text-align: center;
+  }
+}
+.Team_Container .Team_Box {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.Team_Container .Team_Box .Team {
+  width: 350px;
+  height: auto;
+  margin: 30px;
+  transform: skewX(-5deg);
+  transition: 0.4s;
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Team_Container .Team_Box .Team {
+    width: 270px;
+    margin: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Team_Container .Team_Box .Team {
+    width: 80%;
+    transform: skewX(0);
+  }
+}
+.Team_Container .Team_Box .Team:hover {
+  box-shadow: 20px 20px 0 #c28562;
+  transform: translateY(-10px) skewX(-5deg) scale(1.1);
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Team_Container .Team_Box .Team:hover {
+    transform: translateY(-10px) skewX(-5deg) scale(1.1);
+    box-shadow: 5px 5px 0 #c28562;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Team_Container .Team_Box .Team:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 7px 7px 0 #c28562;
+  }
+}
+.Team_Container .Team_Box .Team:hover .Team_Info {
+  background-color: #222222;
+}
+.Team_Container .Team_Box .Team .Team_Img {
+  width: 100%;
+  height: 450px;
+}
+@media (min-width: 552px) and (max-width: 1024px) {
+  .Team_Container .Team_Box .Team .Team_Img {
+    height: 300px;
+    background-color: white;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Team_Container .Team_Box .Team .Team_Img {
+    height: 250px;
+    background-color: white;
+  }
+}
+.Team_Container .Team_Box .Team .Team_Img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Team_Container .Team_Box .Team .Team_Info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.4s;
+}
+.Team_Container .Team_Box .Team .Team_Info div {
+  margin-top: 5px;
+}
+.Team_Container .Team_Box .Team .Team_Info div h3 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 1.45em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Team_Container .Team_Box .Team .Team_Info div h3 {
+    font-size: 18px;
+  }
+}
+.Team_Container .Team_Box .Team .Team_Info div span {
+  font-size: 13px;
+  letter-spacing: 0.6em;
+  font-family: Raleway;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #d7926b;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Team_Container .Team_Box .Team .Team_Info div span {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Kinds_Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.Kinds_Container .Kind {
+  width: 250px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10px;
+  padding: 20px;
+}
+.Kinds_Container .Kind .Kind_Img {
+  width: 70px;
+  height: 70px;
+}
+.Kinds_Container .Kind .Kind_Img svg {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  color: #c28562;
+}
+.Kinds_Container .Kind .Kind_Info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Kinds_Container .Kind .Kind_Info div {
+  margin-top: 10px;
+}
+.Kinds_Container .Kind .Kind_Info div h3 {
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 18px; /* Уменьшаем размер заголовка для меньших экранов */
+  line-height: 1.45em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.Kinds_Container .Kind .Kind_Info div p {
+  color: rgba(0, 0, 0, 0.568627451);
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .Kinds_Container {
+    padding: 30px 0;
+    flex-wrap: wrap;
+  }
+  .Kind {
+    width: 100%;
+    margin: 10px 0;
+  }
+}/*# sourceMappingURL=style.css.map */

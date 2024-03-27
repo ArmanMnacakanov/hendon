@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #19130b;
+}
+footer .Links_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+footer .Links_Container > div {
+  width: 320px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 15px;
+}
+footer .Links_Container > div h2 {
+  font-family: "Cormorant Garamond";
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+footer .Links_Container > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 15px;
+}
+footer .Links_Container > div > div p {
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-family: "Cormorant Garamond";
+}
+footer .Links_Container > div > div span {
+  color: #c28562;
+  margin: 0 10px 0 0;
+  letter-spacing: 2px;
+}
+footer .Links_Container > div > div a {
+  color: #b2b2b2;
+  text-decoration: none;
+  transition: 0.4s;
+  font-family: "Cormorant Garamond";
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  footer .Links_Container > div > div a {
+    font-size: 16px;
+  }
+}
+footer .Links_Container > div > div a:hover {
+  color: white;
+}
+footer .Links_Container > div > div ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .Links_Container > div > div ul li {
+  margin-top: 15px;
+  overflow: hidden;
+}
+footer .Links_Container > div > div ul li a {
+  display: block;
+  text-align: center;
+  transition: 0.4s;
+  color: #b2b2b2;
+  font-family: "Cormorant Garamond";
+  text-decoration: none;
+  font-size: 18px;
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  footer .Links_Container > div > div ul li a {
+    font-size: 16px;
+  }
+}
+footer .Links_Container > div > div ul li a:hover {
+  color: #c28562;
+}
+footer .Links_Container > div > div div {
+  width: 100%;
+  margin-top: 10px;
+}
+footer .Links_Container > div > div div input {
+  width: 100%;
+  padding: 10px 20px 10px 0;
+  font-family: "Cormorant Garamond";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: transparent;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1ps solid #b2b2b2;
+  color: #c28562;
+  transition: 0.4s;
+}
+footer .Links_Container > div > div div input:focus {
+  border-color: #c28562;
+}
+footer .Links_Container > div > div button {
+  padding: 10px 30px;
+  font-size: 18px;
+  font-family: Raleway;
+  letter-spacing: 3px;
+  color: white;
+  background-color: #c28562;
+  transition: 0.4s;
+  font-weight: 100;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+footer .Links_Container > div > div button:hover {
+  background-color: #db9d79;
+}
+footer .Social_Links_Box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+footer .Social_Links_Box div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+footer .Social_Links_Box div:first-child {
+  border-bottom: 1px solid #6f6d6b;
+}
+footer .Social_Links_Box div p {
+  color: #6f6d6b;
+  letter-spacing: 5px;
+  font-family: Raleway;
+  font-size: 15px;
+}
+footer .Social_Links_Box div p a {
+  color: #b2b2b2;
+  text-decoration: none;
+  transition: 0.4s;
+}
+footer .Social_Links_Box div p a:hover {
+  color: #c28562;
+}
+footer .Social_Links_Box div ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .Social_Links_Box div ul li {
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 50%;
+  list-style: none;
+  border: 1px solid #6f6d6b;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+footer .Social_Links_Box div ul li:hover {
+  border-color: #c28562;
+}
+footer .Social_Links_Box div ul li a {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  color: #c28562;
+}/*# sourceMappingURL=style.css.map */

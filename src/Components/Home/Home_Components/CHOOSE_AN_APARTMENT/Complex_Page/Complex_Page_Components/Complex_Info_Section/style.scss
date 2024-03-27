@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Complex_Info_Box {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://hendon.qodeinteractive.com/wp-content/uploads/2020/04/counter-background.jpg');
+
+
+    .Info {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+
+        h3 {
+            font-size: 13px;
+            letter-spacing: .6em;
+            font-family: Raleway;
+            color: white;
+            position: absolute;
+            top: 50%;
+        }
+
+        span {
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 1em;
+            color: #f7e3d849;
+        }
+
+    }
+}

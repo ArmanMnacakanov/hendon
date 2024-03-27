@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.Team_Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1C0A09;
+    padding: 100px 0;
+
+    @media (min-width:320px) and (max-width:552px){
+        padding: 50px 0;
+    }
+
+    &>div {
+        margin-top: 15px;
+    }
+
+    .Team_Container_Title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &>div {
+            margin-top: 15px;
+
+            h1 {
+                font-family: "Cormorant Garamond";
+                text-transform: uppercase;
+                color: #ffffff;
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 1.09em;
+                letter-spacing: .15em;
+                -ms-word-wrap: break-word;
+                word-wrap: break-word;
+
+                @media (min-width:552px) and (max-width:1024px) {
+                    text-align: center;
+                    font-size: 50px;
+                }
+    
+    
+                @media (min-width:320px) and (max-width:552px) {
+                    text-align: center;
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                font-size: 13px;
+                letter-spacing: .6em;
+                font-family: Raleway;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-weight: 500;
+                line-height: 2.2em;
+                color: #c28562;
+
+                @media (min-width:320px) and (max-width:552px) {
+                    letter-spacing: .4em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .Team_Box {
+        width: 100%;
+        height: auto;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+
+        .Team {
+            width: 350px;
+            height: auto;
+            margin: 30px;
+            transform: skewX(-5deg);
+            transition: .4s;
+
+            @media (min-width:552px) and (max-width:1024px){
+                width: 270px;
+                margin: 15px;
+            }
+
+            @media (min-width:320px) and (max-width:552px){
+                width: 80%;
+                transform: skewX(0);
+            }
+
+            &:hover {
+                box-shadow: 20px 20px 0 #c28562;
+                transform: translateY(-10px) skewX(-5deg) scale(1.1);
+
+                @media(min-width:552px) and (max-width:1024px) {
+                    transform: translateY(-10px) skewX(-5deg) scale(1.1);
+                    box-shadow: 5px 5px 0 #c28562;
+                }
+
+                @media(min-width:320px) and (max-width:552px) {
+                    transform: translateY(-10px) scale(1.1);
+                    box-shadow: 7px 7px 0 #c28562;
+                }
+            }
+            &:hover .Team_Info{
+                background-color: #222222;
+            }
+            .Team_Img {
+                width: 100%;
+                height: 450px;
+
+                @media (min-width:552px) and (max-width:1024px){
+                    height: 300px;
+                    background-color: white;
+                }
+
+                @media(min-width:320px) and (max-width:552px){
+                    height: 250px;
+                    background-color: white;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit:contain;
+                }
+            }
+
+            .Team_Info {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 20px;
+                transition: .4s;
+
+                div {
+                    margin-top: 5px;
+
+                    h3 {
+                        font-family: "Cormorant Garamond";
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        font-size: 22px;
+                        line-height: 1.45em;
+                        font-weight: 500;
+                        letter-spacing: .1em;
+
+                        @media (min-width:320px) and (max-width:1024px){
+                            font-size: 18px;
+                        }
+                    }
+
+                    span {
+                        font-size: 13px;
+                        letter-spacing: .6em;
+                        font-family: Raleway;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        color: #d7926b;
+
+                        @media (min-width:320px) and (max-width:1024px){
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
