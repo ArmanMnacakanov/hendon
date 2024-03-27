@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/hendon/static/css/main.92315f82.css",
+    "main.js": "/hendon/static/js/main.47a152f1.js",
+    "static/media/home-1-rev-img-3.png": "/hendon/static/media/home-1-rev-img-3.2af2e61ee11cc10557bd.png",
+    "static/media/home-1-rev-img-2.png": "/hendon/static/media/home-1-rev-img-2.1877909dd06e7f03f474.png",
+    "static/media/home-1-rev-img-1.png": "/hendon/static/media/home-1-rev-img-1.dfaf62f187b4eddd33ae.png",
+    "static/media/home-1-background-patern-3.png": "/hendon/static/media/home-1-background-patern-3.3df5885df814a85e2d65.png",
+    "static/media/home-1-rev-background-1.jpg": "/hendon/static/media/home-1-rev-background-1.8f639704c3e8a7ca001f.jpg",
+    "static/media/home-1-rev-background-2.jpg": "/hendon/static/media/home-1-rev-background-2.ec4495db38e7f9ea6293.jpg",
+    "static/media/home-1-rev-background-3.jpg": "/hendon/static/media/home-1-rev-background-3.257ca7024ece30e4235c.jpg",
+    "static/media/home-1-video-buton-img.jpg": "/hendon/static/media/home-1-video-buton-img.bf7581e8e51c83833a95.jpg",
+    "static/media/apart-img-2.jpg": "/hendon/static/media/apart-img-2.611625027ffab3d702f6.jpg",
+    "static/media/apart-img-1.jpg": "/hendon/static/media/apart-img-1.23cd15007b718fbb20c5.jpg",
+    "static/media/apart-slider-img-1.png": "/hendon/static/media/apart-slider-img-1.2f47ee3b255feae23f5f.png",
+    "static/media/home-1-background-patern-2.jpg": "/hendon/static/media/home-1-background-patern-2.9f88a0ae830a5186feda.jpg",
+    "index.html": "/hendon/index.html",
+    "main.92315f82.css.map": "/hendon/static/css/main.92315f82.css.map",
+    "main.47a152f1.js.map": "/hendon/static/js/main.47a152f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92315f82.css",
+    "static/js/main.47a152f1.js"
+  ]
+}
