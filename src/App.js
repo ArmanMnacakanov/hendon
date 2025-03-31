@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="https://armanmnacakanov.github.io/">
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
