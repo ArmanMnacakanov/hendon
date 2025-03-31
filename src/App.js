@@ -30,7 +30,7 @@ function App() {
     <BrowserRouter basename="/">
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route path='home' index element={<Home />} />
+          <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='getintouch' element={<Get_In_Touch />} />
           <Route path='services' element={<Service />} />
