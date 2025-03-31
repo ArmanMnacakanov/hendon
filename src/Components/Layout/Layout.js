@@ -64,7 +64,7 @@ const Layout = () => {
             <nav style={{ backgroundColor: color }} className={active ? 'active' : ''}>
                 <ul>
                     <li>
-                        <Link to='/' onClick={()=>{
+                        <Link to='/hendon' onClick={()=>{
                              if (windowWidth <= 768) MenuToggle();
                         }}>home</Link>
                     </li>
