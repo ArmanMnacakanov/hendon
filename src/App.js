@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <HashRouter basename="/hendon">
+    <HashRouter basename="/">
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
